@@ -123,34 +123,36 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
+          <div class="col-lg-6 col-md-12 text-center">
             <div class="service-box mt-5 mx-auto">
               <!--i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i-->
-              <img src="img/icons/manu.png" alt="" title="" style="width: 50%" /> 
+              <img src="img/icons/manu.png" alt="" title="" style="width: 40%" /> 
               <h3 class="mb-3">Manufacturers Representation and Sourcing</h3>
               <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
+          <div class="col-lg-6 col-md-12 text-center">
             <div class="service-box mt-5 mx-auto">
               <!--i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i-->
-              <img src="img/icons/strat.png" alt="" title="" style="width: 50%"/>
+              <img src="img/icons/strat.png" alt="" title="" style="width: 40%"/>
               <h3 class="mb-3">Strategic Allaince and Support</h3>
               <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-12 text-center">
             <div class="service-box mt-5 mx-auto">
               <!--i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i-->
-              <img src="img/icons/trou.png" alt="" title="" style="width: 50%"/>
+              <img src="img/icons/trou.png" alt="" title="" style="width: 40%"/>
               <h3 class="mb-3">Troubleshooting</h3>
               <p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
+          <div class="col-lg-6 col-md-12 text-center">
             <div class="service-box mt-5 mx-auto">
               <!--i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i-->
-              <img src="img/icons/export.png" alt="" title="" style="width: 50%"/>
+              <img src="img/icons/export.png" alt="" title="" style="width: 40%"/>
               <h3 class="mb-3">Merchant Exports</h3>
               <p class="text-muted mb-0">You have to make your websites with love these days!</p>
             </div>
@@ -177,12 +179,37 @@
           </div>
         </div>
       </div>
-         <div id="map"></div>
+        
 
       <div class="container">
-        <div class="row justify-content-center">
-
-          <div class="col-lg-4 col-md-4">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+          <div class="form" style="padding-top: 1rem;">
+              <div id="errormessage"></div>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                </div>
+                <div class="form-group">
+                  <input type="text" name="phone" class="form-control" id="name" placeholder="Your Phone Number" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <br>
+          <div class="row">
+          <div class="col-lg-6 col-md-12">
             <br>
             <div class="info">
               <div>
@@ -212,29 +239,11 @@
             </div>
           </center>
           </div>
-          <br>
-          <div class="col-lg-5 col-md-12">
-            <div class="form" style="padding-top: 1rem;">
-              <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                </div>
-                <div class="form-group">
-                  <input type="text" name="phone" class="form-control" id="name" placeholder="Your Phone Number" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
-              </form>
-            </div>
+          <div class="col-lg-6 col-md-12">
+             <div id="map"></div>
+           </div> 
+          
+            
           </div>
 
         </div>
@@ -261,7 +270,7 @@ function initMap() {
   var uluru = {lat: 22.2809733, lng: 70.7786116};
   // The map, centered at Uluru
   var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 19, center: uluru});
+      document.getElementById('map'), {zoom: 18, center: uluru});
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({position: uluru, map: map});
 }
