@@ -317,7 +317,7 @@ header.masthead p {
 .about{
   z-index: 1;
   background-opacity: 0.6;
-  background-image: url("../img/about.png");
+  background-image: url("../img/about.gif");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -328,7 +328,7 @@ header.masthead p {
 .partner{
   z-index: 1;
   background-opacity: 0.6;
-  background-image: url("../img/partner.jpg");
+  background-image: url("../img/partner.gif");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
