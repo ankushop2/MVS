@@ -33,7 +33,7 @@
     </style>
   </head>
 
-  <body id="page-top">
+  <body id="page-top" style="font-family: Open Sans;">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -45,10 +45,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#founder">Founder's Message</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#services">Services</a>
@@ -69,7 +69,7 @@
         <div class="row" style="padding-top: 10rem">
           <div class="col-2">
             <h1>
-              <strong style="color: #006e39;font-family: 'Francois One';">Growing Together</strong>
+              <strong style="color: #006e39;font-family: 'Francois One';" class="ml3">Growing Together</strong>
             </h1>
           </div>
         </div>
@@ -80,48 +80,38 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Founder's Message</h2>
-            <hr>
+            <h2 class="section-heading">Founder's Message</h2><hr>
+            <div class="row">
+              <div class="col-lg-6 content order-lg-1 order-2">
+                <br>
+                <img src="img/profile.jpg" style="width: 80%;">
+              </div>
+              <div class="col-lg-6 content order-lg-1 order-2"><br>
+               <p>We started MV Synergy Solutions in 2013 with a vision of creating a company that is truly special in impact oriented synergy solutions. We are building a company culture that focuses on customer delight based on value addition. </p>
+              <p>MV Synergy Solutions was founded on the principle that, “our clients deserve to be assured of not only achieving short term deliverables but also realizing a measurable return on their investment for the long-haul based on our services-intensive enterprise.</p>
+              <p>We’re the best combination of both, a large corporate and a small one, which means you get structure, consistency, access to a broad network, commitment, and the personal touch.</p>
+              <p>We have hand holding approach when we work with our clients. We are committed to excellence in the path we walk and therefore will be a high flyer in any challenge coming our way. We challenge ourselves every day to do better and be better</p>
+              <p>-Ajit Nathwani</p>
+
+              </div>
           </div>
         </div>
       </div>
-      
+      </div>
     </section>
 
-    <section class="about" id="about" style="">
+    <section class="about text-black" id="about" style="">
         <div class="container"><center>
         <h2 class="title">Few Words About Us</h2>
-        <p>
-          We are a team of professionals into</p></center>
-        <div class="row about-container">
+            <h5> Vision: Achieving Customer Delight.</h5>
+             <p>We provide strategic business development solutions through services like Sourcing, Manufacturer’s Representation, Strategic Alliance Support and Trouble Shooting for the Engineering Industry. We also deal with Merchant Exports.</p>
+         <p>We also provide technical support services to global clients like providing 3D models, patterns, dies, tools, etc based their inputs. In addition to these we provide some value-added services through strategic partners. </p>
+          <p>MVSS was established in 2013 and is based in Rajkot. Rajkot is a major  Engineering Industry hub, which gives us a geographical advantage. Our founder has been part of this industry handling global business development for more than 3 decades and has a great network of people and business entities, locally and globally, through diverse engineering industry verticals, which gives us a unique and strategic edge. </p>
+        <p>We know exactly what our customers and suppliers, expect from us and we full fill not only their stated needs but also their implied needs. We believe, commitment, transparency and communication are the main pillars for a good relationship. Enough said, let’s Synergize and Grow Together.</p>
 
-          <div class="col-lg-6 content order-lg-1 order-2">
-             
-              <p class="description">Exports of Engineering and other products from India. Imports, selectively as per Indian client’s requirement.</p>
-                              
-              <p class="description">Indian Manufacturer’s Representation – professional, global business development services.</p>
-                  
-             <p class="description">Take up selectively; trouble shooting projects like; payment default cases, strained business relationships, to revive/normalise etc.,</p>
-                                   
-              <p class="description">Serve overseas companies, through value added Sourcing services, for sourcing from India.</p>
-           
-          </div>
-
-          <div class="col-lg-6 content order-lg-1 order-2">         
-              
-              <p class="description">Serve overseas companies, as their strategic Support Partner for any intended venture establishment/presence in India.</p>      
-                       
-              <p class="description">Technical support services to Global clients like; providing 3D drawings/modelling, Patterns, Dies, Tools, etc., based their inputs.</p>
-                        
-              <p class="description">Represent Export Business Development Agencies like; Trade Fair Management companies, Online Buyer-Seller business development agencies etc.,</p>
-                                 
-              <p class="description">Support, Strategic Alliance interests of Indian companies.</p>           
-
-          </div>
 
         </div>
 
-      </div>
     </section>
 
     <section id="services">
@@ -246,7 +236,7 @@
             </div>
             <center>
             <div class="social-links">
-              <a href="https://www.facebook.com/MVSynergySolutions2013" class="facebook"><i class="fa fa-facebook fa-2x"></i></a>
+              <a href="https://www.facebook.com/MVSynergySolutions2013" class="facebook" style="padding-right: 20px;"><i class="fa fa-facebook fa-2x"></i></a>
               <a href="https://www.linkedin.com/in/ajitnathvani" class="linkedin"><i class="fa fa-linkedin fa-2x"></i></a>
             </div>
           </center>
@@ -298,7 +288,24 @@ function initMap() {
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script type="text/javascript">
+      // Wrap every letter in a span
+$('.ml3').each(function(){
+  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+});
 
+anime.timeline({loop: false})
+  .add({
+    targets: '.ml3 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 2250,
+    delay: function(el, i) {
+      return 150 * (i+1)
+    }
+  });
+    </script>
   </body>
 
 </html>
