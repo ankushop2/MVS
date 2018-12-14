@@ -171,7 +171,8 @@ img::-moz-selection {
 
 header.masthead {
   padding-top: 7rem;
-  padding-bottom: calc(7rem - 56px);
+  /*padding-bottom: calc(7rem - 56px);*/
+  padding-bottom: 7rem;
   background-image: url("../img/header1.jpg");
   background-position: center center;
   -webkit-background-size: cover;
@@ -334,4 +335,12 @@ header.masthead p {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+#contactcss{
+    padding: 20px;
+    overflow: auto;
+    margin: 30px 0px 10px;
+    box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.5);
+
 }
